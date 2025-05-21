@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import NoteEditor from './components/NoteEditor';
 import NoteList from './components/NoteList';
-import { loadNotes, saveNotes } from './utils/storage';
+import { loadNotes, saveNotes } from './utils/storage.js';
 
 const App = () => {
   const [notes, setNotes] = useState([]);

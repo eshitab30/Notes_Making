@@ -19,4 +19,4 @@ export const saveNotes = (notes) => {
     console.error('Failed to save notes:', error);
   }
 };
-storage.js
+// export default storage.js

@@ -41,7 +41,15 @@ const NoteList = ({ notes, editNote, deleteNote }) => {
             </>
           ) : (
             <>
-              <ReactMarkdown className="prose max-w-none">{note.text}</ReactMarkdown>
+              <ReactMarkdown
+                components={{
+                  p: ({ node, ...props }) => (
+                    <p className="prose max-w-none" {...props} />
+                  )
+                }}
+              >
+                {note.text}
+              </ReactMarkdown>
               <div className="mt-2 space-x-2">
                 <button
                   onClick={() => handleEdit(note)}
