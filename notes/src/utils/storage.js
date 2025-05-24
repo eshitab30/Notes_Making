@@ -1,5 +1,3 @@
-// Handles saving and loading notes to/from localStorage
-
 const STORAGE_KEY = 'notes';
 
 export const loadNotes = () => {
@@ -19,4 +17,3 @@ export const saveNotes = (notes) => {
     console.error('Failed to save notes:', error);
   }
 };
-// export default storage.js
